@@ -1,6 +1,5 @@
 import { usePlaySound } from '@/src/hooks/usePlaySound';
 import Link from 'next/link';
-import React from 'react';
 import { useTranslation } from 'react-i18next';
 
 export const MainInfo = () => {
