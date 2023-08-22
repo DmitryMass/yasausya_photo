@@ -11,6 +11,7 @@ const config: Config = {
       colors: {
         sand: '#d8d0bd',
         langBtnActive: '#b3dce2',
+        mainBg: '#152632',
       },
     },
   },

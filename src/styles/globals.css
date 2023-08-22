@@ -12,3 +12,31 @@ body,
 body {
   background: #152632;
 }
+
+.slick-dots li.slick-active button:before {
+  color: #d8d0bd !important;
+}
+.slick-dots li button:before {
+  color: #d8d0bd !important;
+}
+
+@media (max-width: 768px) {
+  .slick-dots {
+    bottom: 20px !important;
+  }
+}
+.slick-next {
+  right: 10px !important;
+  z-index: 30;
+}
+.slick-prev {
+  left: 10px !important;
+  z-index: 30;
+}
+
+@media (max-width: 768px) {
+  .slick-prev,
+  .slick-next {
+    display: none !important;
+  }
+}

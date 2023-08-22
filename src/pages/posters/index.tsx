@@ -1,18 +1,39 @@
 import { PosterItem } from '@/src/components/posters/PosterItem';
+import { PosterModal } from '@/src/components/posters/PosterModal';
 import { PostersContainer } from '@/src/components/posters/PostersContainer';
+import { usePlaySound } from '@/src/hooks/usePlaySound';
 import Link from 'next/link';
-import { FC } from 'react';
+import { FC, useState } from 'react';
 
 const Posters: FC = () => {
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+  const [selectedPosterIndex, setSelectedPosterIndex] = useState(0);
+  const { playSound } = usePlaySound();
+
+  const openModal = (index: number) => {
+    setSelectedPosterIndex(index);
+    setModalIsOpen(true);
+    playSound();
+  };
+
+  const closeModal = () => {
+    setModalIsOpen(false);
+    playSound();
+  };
+
   return (
     <div>
       <Link
-        className='absolute w-full text-center top-[30px] uppercase font-medium text-sand'
+        className='absolute text-center  uppercase font-medium text-sand top-1 w-full mx-auto'
         href={'/'}
       >
-        {/* <img src='/pictures/logo.jpg' alt='' /> */}
+        <img
+          className='w-[100px] mx-auto'
+          src='/pictures/logo.png'
+          alt='logo'
+        />
       </Link>
-      <div className='max-w-[800px] w-full mx-auto px-2.5 pt-14 text-center mb-28'>
+      <div className='max-w-[800px] w-full mx-auto px-2.5 pt-24 text-center mb-28'>
         <p className='text-sand mb-24 text-lg'>
           All posters are shipped through UPS or USPS. Customers are responsible
           for paying any additional customs/duties fees.{' '}
@@ -23,14 +44,25 @@ const Posters: FC = () => {
       </div>
       <PostersContainer>
         {data.map(({ img, text }, idx) => (
-          <PosterItem key={idx} img={img} text={text} />
+          <PosterItem
+            onClick={() => openModal(idx)}
+            key={idx}
+            img={img}
+            text={text}
+          />
         ))}
       </PostersContainer>
+      {modalIsOpen ? (
+        <PosterModal
+          onRequestClose={() => closeModal()}
+          selectedPosterIndex={selectedPosterIndex}
+        />
+      ) : null}
     </div>
   );
 };
 
-const data = [
+export const data = [
   {
     img: '/pictures/posters/long-1.JPG',
     text: 'Some Data Text',

@@ -1,17 +1,16 @@
 import clsx from 'clsx';
-import { FC, useRef, useEffect } from 'react';
-import styles from './posters.module.css';
-import { usePlaySound } from '@/src/hooks/usePlaySound';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+import { FC, useEffect, useRef } from 'react';
+import styles from './posters.module.css';
 
 type PosterItemProps = {
   img: string;
   text: string;
+  onClick?: () => void;
 };
 
-export const PosterItem: FC<PosterItemProps> = ({ img, text }) => {
-  const { playSound } = usePlaySound();
+export const PosterItem: FC<PosterItemProps> = ({ img, text, onClick }) => {
   const elementRef = useRef(null);
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -32,9 +31,9 @@ export const PosterItem: FC<PosterItemProps> = ({ img, text }) => {
 
   return (
     <div
-      className='w-full flex items-center justify-center flex-col'
+      className='w-full flex items-center justify-center flex-col cursor-pointer'
       ref={elementRef}
-      onClick={playSound}
+      onClick={onClick}
     >
       <div className='max-w-[400px] flex-1 flex justify-center items-center'>
         <div
@@ -43,9 +42,7 @@ export const PosterItem: FC<PosterItemProps> = ({ img, text }) => {
           <img className='w-full h-full object-cover' src={img} alt='img' />
         </div>
       </div>
-      <div className='text-sand text-xl font-semibold tracking-wider'>
-        {text}
-      </div>
+      <div className='text-sand text-lg font-medium tracking-wider'>{text}</div>
     </div>
   );
 };
