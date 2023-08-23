@@ -9,9 +9,9 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        sand: "#d8d0bd",
-        langBtnActive: "#b3dce2",
-        mainBg: "#152632",
+        sand: '#d8d0bd',
+        langBtnActive: '#b3dce2',
+        mainBg: '#152632',
         mainBgOpacity: "#152632cc",
       },
     },
