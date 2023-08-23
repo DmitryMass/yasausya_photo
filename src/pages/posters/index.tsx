@@ -33,6 +33,7 @@ const Posters: FC = () => {
           alt='logo'
         />
       </Link>
+
       <div className='max-w-[800px] w-full mx-auto px-2.5 pt-24 text-center mb-28'>
         <p className='text-sand mb-24 text-lg'>
           All posters are shipped through UPS or USPS. Customers are responsible

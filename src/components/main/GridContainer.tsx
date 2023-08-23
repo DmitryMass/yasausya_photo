@@ -9,7 +9,7 @@ const data = [
   },
   {
     // img: '/pictures/header-bg.jpg',
-    img: 'https://images.unsplash.com/photo-1692396469311-d896fa89b8b6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=388&q=80',
+    img: '/pictures/img_1033.JPG',
     text: 'Morning Gallery',
   },
   {
