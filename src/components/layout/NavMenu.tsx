@@ -1,7 +1,7 @@
 import clsx from 'clsx';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import React, { FC } from 'react';
+import { type FC } from 'react';
 import { useTranslation } from 'react-i18next';
 import { SocialButtons } from '../header/SocialButtons';
 
@@ -20,12 +20,14 @@ export const NavMenu: FC<NavMenuProps> = ({ isOpenNav, closeNav }) => {
         'bg-mainBgOpacity w-full visible fixed overflow-hidden top-0 left-0 h-full transition-all duration-700 ease-[cubic-bezier(0.68,-0.35,0.265,1.35)]',
         !isOpenNav ? 'invisible opacity-0 h-0' : null,
       )}
+      onClick={closeNav}
     >
       <div
         className={clsx(
           'w-full h-full bg-mainBg sm:w-1/4 min-w-[320px] flex flex-col justify-between ml-auto pl-7 pr-9 pt-20 pb-10 transition-all duration-700 ease-[cubic-bezier(0.68,-0.35,0.265,1.35)]',
           !isOpenNav ? 'translate-x-full' : null,
         )}
+        onClick={(e) => e.stopPropagation()}
       >
         <nav className="w-full flex flex-col gap-5 text-sand text-2xl ml-auto text-right">
           <Link
@@ -36,7 +38,10 @@ export const NavMenu: FC<NavMenuProps> = ({ isOpenNav, closeNav }) => {
                 : 'hover:after:scale-x-100',
             )}
             href="/"
-            onClick={closeNav}
+            onClick={(e) => {
+              e.stopPropagation();
+              closeNav();
+            }}
           >
             {t('home')}
           </Link>
@@ -60,7 +65,10 @@ export const NavMenu: FC<NavMenuProps> = ({ isOpenNav, closeNav }) => {
                 : 'hover:after:scale-x-100',
             )}
             href="/wallpapers"
-            onClick={closeNav}
+            onClick={(e) => {
+              e.stopPropagation();
+              closeNav();
+            }}
           >
             {t('wallpapers')}
           </Link>
