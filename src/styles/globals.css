@@ -20,6 +20,23 @@ body {
   color: #d8d0bd !important;
 }
 
+.slick-container2 .slick-dots {
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+  bottom: -50px !important;
+}
+.slick-container2 .slick-dots li.slick-active {
+  width: 80px !important;
+  height: 50px !important;
+  margin: 0 !important;
+}
+.slick-container2 .slick-dots li {
+  width: 80px !important;
+  height: 50px !important;
+  margin: 0 !important;
+}
+
 @media (max-width: 768px) {
   .slick-dots {
     bottom: 20px !important;
