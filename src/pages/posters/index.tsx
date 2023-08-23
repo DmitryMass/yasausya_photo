@@ -24,22 +24,21 @@ const Posters: FC = () => {
   return (
     <div>
       <Link
-        className='absolute text-center  uppercase font-medium text-sand top-1 w-full mx-auto'
+        className="absolute text-center  uppercase font-medium text-sand top-1 w-full mx-auto"
         href={'/'}
       >
         <img
-          className='w-[100px] mx-auto'
-          src='/pictures/logo.png'
-          alt='logo'
+          className="w-[100px] mx-auto"
+          src="/pictures/logo.png"
+          alt="logo"
         />
       </Link>
-
-      <div className='max-w-[800px] w-full mx-auto px-2.5 pt-24 text-center mb-28'>
-        <p className='text-sand mb-24 text-lg'>
+      <div className="max-w-[800px] w-full mx-auto px-2.5 pt-40 text-center mb-28">
+        <p className="text-sand mb-24 text-lg">
           All posters are shipped through UPS or USPS. Customers are responsible
           for paying any additional customs/duties fees.{' '}
         </p>
-        <h1 className='text-sand font-medium text-4xl tracking-wide'>
+        <h1 className="text-sand font-medium text-4xl tracking-wide">
           Posters
         </h1>
       </div>
