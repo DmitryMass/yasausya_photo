@@ -1,3 +1,4 @@
+import { Logo } from '@/src/components/logo/Logo';
 import { PosterItem } from '@/src/components/posters/PosterItem';
 import { PosterModal } from '@/src/components/posters/PosterModal';
 import { PostersContainer } from '@/src/components/posters/PostersContainer';
@@ -23,7 +24,8 @@ const Posters: FC = () => {
 
   return (
     <div>
-      <Link
+      <Logo />
+      {/* <Link
         className="absolute text-center  uppercase font-medium text-sand top-1 w-full mx-auto"
         href={'/'}
       >
@@ -32,7 +34,7 @@ const Posters: FC = () => {
           src="/pictures/logo.png"
           alt="logo"
         />
-      </Link>
+      </Link> */}
       <div className="max-w-[800px] w-full mx-auto px-2.5 pt-40 text-center mb-28">
         <p className="text-sand mb-24 text-lg">
           All posters are shipped through UPS or USPS. Customers are responsible
