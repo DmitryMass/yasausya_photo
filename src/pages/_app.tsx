@@ -1,9 +1,14 @@
 import type { AppProps } from 'next/app';
 import type { FC } from 'react';
-import '@/src/styles/globals.css';
 import { I18nextProvider } from 'react-i18next';
 import { MainLayout } from '../components/layout/MainLayout';
 import i18n from '@/src/utils/i18next';
+import 'swiper/css';
+import 'swiper/css/free-mode';
+import 'swiper/css/navigation';
+import 'swiper/css/thumbs';
+import 'swiper/css/controller';
+import '@/src/styles/globals.css';
 
 const App: FC<AppProps> = ({ Component, pageProps }) => {
   return (

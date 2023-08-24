@@ -26,10 +26,11 @@ const GridElement: FC<GridElementProps> = ({ img }) => {
         gsap.fromTo(
           elementRef.current,
           { autoAlpha: 0, y: 50 },
-          { autoAlpha: 1, y: 0, ease: 'power3.out', duration: 3 }
+          { autoAlpha: 1, y: 0, ease: 'power3.out', duration: 3 },
         );
       },
     });
+    return () => ScrollTrigger.killAll();
   }, []);
   return (
     <div
@@ -37,8 +38,8 @@ const GridElement: FC<GridElementProps> = ({ img }) => {
       onClick={playSound}
       className={clsx(styles.div, 'overflow-hidden cursor-pointer')}
     >
-      <img src={img.img} alt='logo' />
-      <p className=' text-sand absolute top-0 w-full text-center text-2xl  uppercase transition-all duration-500 h-full flex justify-center items-center'>
+      <img src={img.img} alt="logo" />
+      <p className=" text-sand absolute top-0 w-full text-center text-2xl  uppercase transition-all duration-500 h-full flex justify-center items-center">
         {img.text}
       </p>
     </div>
