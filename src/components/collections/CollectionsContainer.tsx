@@ -1,20 +1,11 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
+import { Logo } from '../logo/Logo';
 import styles from './collections.module.css';
-import Link from 'next/link';
 
 export const CollectionsContainer: FC = () => {
   return (
     <>
-      <Link
-        className="absolute text-center  uppercase font-medium text-sand top-1 w-full mx-auto"
-        href={'/'}
-      >
-        <img
-          className="w-[100px] mx-auto"
-          src="/pictures/logo.png"
-          alt="logo"
-        />
-      </Link>
+      <Logo />
       <div className="my-24 text-center pt-24">
         <h1 className="text-sand font-medium text-4xl tracking-wide">
           Summer COllection

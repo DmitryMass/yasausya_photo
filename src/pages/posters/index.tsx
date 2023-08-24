@@ -3,7 +3,6 @@ import { PosterItem } from '@/src/components/posters/PosterItem';
 import { PosterModal } from '@/src/components/posters/PosterModal';
 import { PostersContainer } from '@/src/components/posters/PostersContainer';
 import { usePlaySound } from '@/src/hooks/usePlaySound';
-import Link from 'next/link';
 import { FC, useState } from 'react';
 
 const Posters: FC = () => {
@@ -25,16 +24,6 @@ const Posters: FC = () => {
   return (
     <div>
       <Logo />
-      {/* <Link
-        className="absolute text-center  uppercase font-medium text-sand top-1 w-full mx-auto"
-        href={'/'}
-      >
-        <img
-          className="w-[100px] mx-auto"
-          src="/pictures/logo.png"
-          alt="logo"
-        />
-      </Link> */}
       <div className="max-w-[800px] w-full mx-auto px-2.5 pt-40 text-center mb-28">
         <p className="text-sand mb-24 text-lg">
           All posters are shipped through UPS or USPS. Customers are responsible
