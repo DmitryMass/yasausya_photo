@@ -1,10 +1,12 @@
+import { usePlaySound } from '@/src/hooks/usePlaySound';
 import { FC, useState, useEffect } from 'react';
 
 export const ScrollTop: FC = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const { playSound } = usePlaySound();
 
   const toggleVisibility = () => {
-    if (window.scrollY > 100) {
+    if (window.scrollY > 400) {
       setIsVisible(true);
     } else {
       setIsVisible(false);
@@ -12,6 +14,7 @@ export const ScrollTop: FC = () => {
   };
 
   const scrollToTop = () => {
+    playSound();
     window.scrollTo({
       top: 0,
       behavior: 'smooth',
@@ -27,7 +30,7 @@ export const ScrollTop: FC = () => {
 
   return (
     <div
-      className={`fixed bottom-5 right-5 w-8 h-8 z-20 p-1 ${
+      className={`fixed bottom-7 right-7 w-8 h-8 z-20 p-1 animate-pulse ${
         isVisible ? 'block' : 'hidden'
       }`}
       onClick={scrollToTop}

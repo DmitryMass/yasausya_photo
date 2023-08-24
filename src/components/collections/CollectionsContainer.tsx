@@ -1,16 +1,20 @@
+import { useRouter } from 'next/router';
 import { FC } from 'react';
-import { Logo } from '../logo/Logo';
+import { PageTitle } from '../ui/PageTitle';
 import styles from './collections.module.css';
 
 export const CollectionsContainer: FC = () => {
+  const {
+    query: { name },
+  } = useRouter();
   return (
     <>
-      <Logo />
-      <div className="my-24 text-center pt-24">
-        <h1 className="text-sand font-medium text-4xl tracking-wide pointer-events-none">
-          Summer COllection
-        </h1>
-      </div>
+      <PageTitle
+        title={name as string}
+        text="All posters are shipped through UPS or USPS. Customers are responsible
+          for paying any additional customs/duties fees."
+      />
+
       <div className={styles.container}>
         <div className={styles.div1}>
           <img

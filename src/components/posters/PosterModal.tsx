@@ -3,6 +3,7 @@ import type { FC } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick-theme.css';
 import 'slick-carousel/slick/slick.css';
+import { ContactMe } from '../ui/ContactMe';
 
 export type PosterModalProps = {
   onRequestClose: () => void;
@@ -34,7 +35,7 @@ export const PosterModal: FC<PosterModalProps> = ({
           {data.map(({ img, text }: any, idx: number) => (
             <div key={idx} className="relative">
               <div className="block gap-4 md:flex px-5 my-16">
-                <div className="w-full p-4 border h-[400px] mb-4 md:ml-5">
+                <div className="w-full p-4 border border-sand h-[400px] mb-4 md:ml-5">
                   <img
                     className="w-full h-full object-contain object-center mx-auto"
                     src={img}
@@ -52,7 +53,7 @@ export const PosterModal: FC<PosterModalProps> = ({
                     doloribus velit. Facere voluptatem aperiam illum, quam earum
                     perferendis?
                   </p>
-                  <button className="text-sand">CONTACT ME</button>
+                  <ContactMe />
                 </div>
               </div>
             </div>

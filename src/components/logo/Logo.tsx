@@ -10,7 +10,7 @@ export const Logo: FC = () => {
   return (
     <Link
       href={'/'}
-      className="pt-8 block w-fit m-auto hover:opacity-90 transition-all duration-300 group relative z-20"
+      className="pt-16 block w-fit m-auto hover:opacity-90 transition-all duration-300 group relative z-20"
     >
       <div className="relative flex flex-col justify-center pt-8 items-center w-28">
         <span

@@ -1,7 +1,7 @@
-import { Logo } from '@/src/components/logo/Logo';
 import { PosterItem } from '@/src/components/posters/PosterItem';
 import { PosterModal } from '@/src/components/posters/PosterModal';
 import { PostersContainer } from '@/src/components/posters/PostersContainer';
+import { PageTitle } from '@/src/components/ui/PageTitle';
 import { usePlaySound } from '@/src/hooks/usePlaySound';
 import { FC, useState } from 'react';
 
@@ -23,16 +23,11 @@ const Posters: FC = () => {
 
   return (
     <div>
-      <Logo />
-      <div className="max-w-[800px] w-full mx-auto px-2.5 pt-40 text-center mb-28">
-        <p className="text-sand mb-24 text-lg pointer-events-none">
-          All posters are shipped through UPS or USPS. Customers are responsible
-          for paying any additional customs/duties fees.{' '}
-        </p>
-        <h1 className="text-sand font-medium text-4xl tracking-wide pointer-events-none">
-          Posters
-        </h1>
-      </div>
+      <PageTitle
+        title="Posters"
+        text="All posters are shipped through UPS or USPS. Customers are responsible
+          for paying any additional customs/duties fees."
+      />
       <PostersContainer>
         {data.map(({ img, text }, idx) => (
           <PosterItem

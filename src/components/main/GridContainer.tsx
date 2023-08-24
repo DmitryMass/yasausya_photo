@@ -5,28 +5,27 @@ import styles from './grid-container.module.css';
 const data = [
   {
     img: '/pictures/img_1033.JPG',
-    text: 'Morning Gallery',
-  },
-  {
-    // img: '/pictures/header-bg.jpg',
-    img: '/pictures/img_1033.JPG',
-    text: 'Morning Gallery',
+    name: 'Morning Collection',
   },
   {
     img: '/pictures/img_1033.JPG',
-    text: 'Morning Gallery',
+    name: 'Summer Collection',
   },
   {
     img: '/pictures/img_1033.JPG',
-    text: 'Morning Gallery',
+    name: 'Winter Collection',
   },
   {
     img: '/pictures/img_1033.JPG',
-    text: 'Morning Gallery',
+    name: 'Autumn Collection',
+  },
+  {
+    img: '/pictures/img_1033.JPG',
+    name: 'Spring Collection',
   },
   {
     img: '/pictures/header-bg.jpg',
-    text: 'Morning Gallery',
+    name: 'Pornhub Collection',
   },
 ];
 
