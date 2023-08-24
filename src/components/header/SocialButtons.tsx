@@ -13,7 +13,11 @@ export const SocialButtons: FC = () => {
         href={'#'}
         target="_blank"
       >
-        <img className="w-6 h-6" src="/icons/mail-logo.svg" alt="" />
+        <img
+          className="w-6 h-6 custom-image"
+          src="/icons/mail-logo.svg"
+          alt=""
+        />
       </Link>
       <Link
         onClick={playSound}
@@ -21,7 +25,11 @@ export const SocialButtons: FC = () => {
         href={'#'}
         target="_blank"
       >
-        <img className="w-6 h-6" src="/icons/instagram-logo.svg" alt="logo" />
+        <img
+          className="w-6 h-6 custom-image"
+          src="/icons/instagram-logo.svg"
+          alt="logo"
+        />
       </Link>
       <Link
         onClick={playSound}
@@ -30,7 +38,7 @@ export const SocialButtons: FC = () => {
         target="_blank"
       >
         <img
-          className="w-8 h-8 -ml-0.5"
+          className="w-8 h-8 -ml-0.5 custom-image"
           src="/icons/telegram-logo.svg"
           alt="logo"
         />
@@ -41,7 +49,11 @@ export const SocialButtons: FC = () => {
         href={'#'}
         target="_blank"
       >
-        <img className="w-6 h-6" src="/icons/whatsapp-logo.svg" alt="logo" />
+        <img
+          className="w-6 h-6 custom-image"
+          src="/icons/whatsapp-logo.svg"
+          alt="logo"
+        />
       </Link>
     </div>
   );
