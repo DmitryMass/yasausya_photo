@@ -8,7 +8,7 @@ export const CollectionsContainer: FC = () => {
     query: { name },
   } = useRouter();
   return (
-    <>
+    <div className="pb-10">
       <PageTitle
         title={name as string}
         text="All posters are shipped through UPS or USPS. Customers are responsible
@@ -69,6 +69,6 @@ export const CollectionsContainer: FC = () => {
           />
         </div>
       </div>
-    </>
+    </div>
   );
 };
