@@ -1,8 +1,8 @@
+import { Logo } from '@/src/components/logo/Logo';
 import { PosterItem } from '@/src/components/posters/PosterItem';
 import { PosterModal } from '@/src/components/posters/PosterModal';
 import { PostersContainer } from '@/src/components/posters/PostersContainer';
 import { usePlaySound } from '@/src/hooks/usePlaySound';
-import Link from 'next/link';
 import { FC, useState } from 'react';
 
 const Posters: FC = () => {
@@ -23,22 +23,13 @@ const Posters: FC = () => {
 
   return (
     <div>
-      <Link
-        className="absolute text-center  uppercase font-medium text-sand top-1 w-full mx-auto"
-        href={'/'}
-      >
-        <img
-          className="w-[100px] mx-auto"
-          src="/pictures/logo.png"
-          alt="logo"
-        />
-      </Link>
+      <Logo />
       <div className="max-w-[800px] w-full mx-auto px-2.5 pt-40 text-center mb-28">
-        <p className="text-sand mb-24 text-lg">
+        <p className="text-sand mb-24 text-lg pointer-events-none">
           All posters are shipped through UPS or USPS. Customers are responsible
           for paying any additional customs/duties fees.{' '}
         </p>
-        <h1 className="text-sand font-medium text-4xl tracking-wide">
+        <h1 className="text-sand font-medium text-4xl tracking-wide pointer-events-none">
           Posters
         </h1>
       </div>

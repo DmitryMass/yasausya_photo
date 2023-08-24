@@ -22,37 +22,37 @@ export const PosterModal: FC<PosterModalProps> = ({
     initialSlide: selectedPosterIndex,
   };
   return (
-    <div className='w-full h-full fixed z-20 bg-mainBg inset-0 flex justify-center items-center'>
-      <div className='max-w-[992px] w-full mx-auto relative max-h-screen overflow-y-auto overflow-x-hidden sm:overflow-visible'>
+    <div className="w-full h-full fixed z-20 bg-mainBg inset-0 flex justify-center items-center">
+      <div className="max-w-[992px] w-full mx-auto relative max-h-screen overflow-y-auto overflow-x-hidden sm:overflow-visible">
         <button
           onClick={onRequestClose}
-          className='absolute top-4 right-4 text-sand font-medium z-10'
+          className="absolute top-4 right-4 text-sand font-medium z-10"
         >
           CLOSE
         </button>
         <Slider {...settings}>
           {data.map(({ img, text }: any, idx: number) => (
-            <div key={idx} className='relative'>
-              <div className='block gap-4 md:flex px-5 my-16'>
-                <div className='w-full p-4 border h-[400px] mb-4 md:ml-5'>
+            <div key={idx} className="relative">
+              <div className="block gap-4 md:flex px-5 my-16">
+                <div className="w-full p-4 border h-[400px] mb-4 md:ml-5">
                   <img
-                    className='w-full h-full object-contain object-center mx-auto'
+                    className="w-full h-full object-contain object-center mx-auto"
                     src={img}
-                    alt='photo'
+                    alt="photo"
                   />
                 </div>
-                <div className='max-w-[500px] w-full flex flex-col justify-center items-start'>
-                  <h3 className='text-sand font-medium text-xl mb-3'>
+                <div className="max-w-[500px] w-full flex flex-col justify-center items-start">
+                  <h3 className="text-sand font-medium text-xl mb-3">
                     Morning picture photo jpg
                   </h3>
-                  <p className='text-sand text-sm mb-10 w-11/12'>
+                  <p className="text-sand text-sm mb-10 w-11/12">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     Suscipit provident eveniet non aspernatur, consectetur
                     cupiditate laborum asperiores, nulla culpa odio, praesentium
                     doloribus velit. Facere voluptatem aperiam illum, quam earum
                     perferendis?
                   </p>
-                  <button className='text-sand'>CONTACT ME</button>
+                  <button className="text-sand">CONTACT ME</button>
                 </div>
               </div>
             </div>

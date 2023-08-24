@@ -19,7 +19,7 @@ export const Header: FC = () => {
   return (
     <header
       className={clsx(
-        'px-9 py-6 fixed w-full top-0 z-10',
+        'px-9 py-6 fixed w-full top-0 z-30',
         route === '/' ? null : 'bg-mainBg',
       )}
     >
