@@ -14,7 +14,7 @@ export const Header: FC = () => {
   };
 
   return (
-    <header className="px-9 pt-7 fixed w-full top-0 z-10">
+    <header className="px-9 pt-7 fixed w-full top-0 z-30">
       <div className="flex items-center justify-end gap-8">
         <div className="text-white z-20">
           <LangButtonts />

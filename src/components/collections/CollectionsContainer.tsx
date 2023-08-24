@@ -7,7 +7,7 @@ export const CollectionsContainer: FC = () => {
     <>
       <Logo />
       <div className="my-24 text-center pt-24">
-        <h1 className="text-sand font-medium text-4xl tracking-wide">
+        <h1 className="text-sand font-medium text-4xl tracking-wide pointer-events-none">
           Summer COllection
         </h1>
       </div>

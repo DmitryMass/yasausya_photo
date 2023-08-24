@@ -25,11 +25,11 @@ const Posters: FC = () => {
     <div>
       <Logo />
       <div className="max-w-[800px] w-full mx-auto px-2.5 pt-40 text-center mb-28">
-        <p className="text-sand mb-24 text-lg">
+        <p className="text-sand mb-24 text-lg pointer-events-none">
           All posters are shipped through UPS or USPS. Customers are responsible
           for paying any additional customs/duties fees.{' '}
         </p>
-        <h1 className="text-sand font-medium text-4xl tracking-wide">
+        <h1 className="text-sand font-medium text-4xl tracking-wide pointer-events-none">
           Posters
         </h1>
       </div>
