@@ -48,7 +48,7 @@ const Wallpapers: FC = () => {
             className="mySwiper2"
           >
             {data.map((photo) => (
-              <SwiperSlide>
+              <SwiperSlide key={photo.img}>
                 <div className="relative">
                   <button
                     className="bg-mainBgOpacity flex gap-1 items-center justify-center w-9 h-9 rounded-full absolute top-2 right-2 z-20 border border-slate-900"
@@ -96,7 +96,7 @@ const Wallpapers: FC = () => {
             className="mySwiper"
           >
             {data.map((photo) => (
-              <SwiperSlide>
+              <SwiperSlide key={photo.img}>
                 <img className="object-contain" src={photo.img} />
               </SwiperSlide>
             ))}
