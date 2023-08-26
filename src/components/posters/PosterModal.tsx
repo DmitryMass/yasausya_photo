@@ -1,4 +1,4 @@
-import { data } from '@/src/pages/posters';
+import { postersGroup } from '@/src/utils/posters-group';
 import type { FC } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick-theme.css';
@@ -24,15 +24,15 @@ export const PosterModal: FC<PosterModalProps> = ({
   };
   return (
     <div className="w-full h-full fixed z-20 bg-mainBg inset-0 flex justify-center items-center">
-      <div className="max-w-[992px] w-full mx-auto relative max-h-screen overflow-y-auto overflow-x-hidden sm:overflow-visible">
+      <div className="max-w-[992px] w-full mx-auto relative max-h-screen overflow-y-auto overflow-x-hidden sm:overflow-visible pt-8">
         <button
           onClick={onRequestClose}
-          className="absolute top-4 right-4 text-sand font-medium z-10"
+          className="absolute top-14 right-4 text-sand font-medium z-10"
         >
-          CLOSE
+          <img className="w-7 h-7" src="/icons/close.svg" alt="close" />
         </button>
         <Slider {...settings}>
-          {data.map(({ img, text }: any, idx: number) => (
+          {postersGroup.map(({ img, text }: any, idx: number) => (
             <div key={idx} className="relative">
               <div className="block gap-4 md:flex px-5 my-16">
                 <div className="w-full p-4 border border-sand h-[400px] mb-4 md:ml-5">
@@ -42,18 +42,20 @@ export const PosterModal: FC<PosterModalProps> = ({
                     alt="photo"
                   />
                 </div>
-                <div className="max-w-[500px] w-full flex flex-col justify-center items-start">
-                  <h3 className="text-sand font-medium text-xl mb-3">
+                <div className="max-w-[500px] sm:mx-auto w-full flex flex-col justify-center items-start">
+                  <h3 className="text-sand font-medium text-xl mb-3 w-full text-center md:text-left">
                     Morning picture photo jpg
                   </h3>
-                  <p className="text-sand text-sm mb-10 w-11/12">
+                  <p className="text-sand text-sm mb-10 md:w-11/12 w-full text-center md:text-left">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     Suscipit provident eveniet non aspernatur, consectetur
                     cupiditate laborum asperiores, nulla culpa odio, praesentium
                     doloribus velit. Facere voluptatem aperiam illum, quam earum
                     perferendis?
                   </p>
-                  <ContactMe />
+                  <div className="w-full md:text-left text-center">
+                    <ContactMe />
+                  </div>
                 </div>
               </div>
             </div>

@@ -32,7 +32,7 @@ export const NavMenu: FC<NavMenuProps> = ({ isOpenNav, closeNav }) => {
         <nav className="w-full flex flex-col gap-5 text-sand text-2xl ml-auto text-right">
           <Link
             className={clsx(
-              "hover:font-bold after:content-[''] after:block after:border-b-2 after:border-sand after:scale-x-0 after:transition-transform after:ease-in-out after:duration-300 ",
+              "uppercase hover:font-bold after:content-[''] after:block after:border-b-2 after:border-sand after:scale-x-0 after:transition-transform after:ease-in-out after:duration-300 ",
               asPath === '/'
                 ? 'font-bold after:scale-x-100'
                 : 'hover:after:scale-x-100',
@@ -47,7 +47,7 @@ export const NavMenu: FC<NavMenuProps> = ({ isOpenNav, closeNav }) => {
           </Link>
           <Link
             className={clsx(
-              "hover:font-bold after:content-[''] after:block after:border-b-2 after:border-sand after:scale-x-0 after:transition-transform after:ease-in-out after:duration-300 hover:after:scale-x-100",
+              "uppercase hover:font-bold after:content-[''] after:block after:border-b-2 after:border-sand after:scale-x-0 after:transition-transform after:ease-in-out after:duration-300 hover:after:scale-x-100",
               asPath === '/posters'
                 ? 'font-bold after:scale-x-100'
                 : 'hover:after:scale-x-100',
@@ -59,7 +59,7 @@ export const NavMenu: FC<NavMenuProps> = ({ isOpenNav, closeNav }) => {
           </Link>
           <Link
             className={clsx(
-              "hover:font-bold after:content-[''] after:block after:border-b-2 whitespace-nowrap after:border-sand after:scale-x-0 after:transition-transform after:ease-in-out after:duration-300 hover:after:scale-x-100",
+              "uppercase hover:font-bold after:content-[''] after:block after:border-b-2 whitespace-nowrap after:border-sand after:scale-x-0 after:transition-transform after:ease-in-out after:duration-300 hover:after:scale-x-100",
               asPath === '/wallpapers'
                 ? 'font-bold after:scale-x-100'
                 : 'hover:after:scale-x-100',
