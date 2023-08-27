@@ -7,7 +7,7 @@ export type CollectionsGroup = {
 
 export type Collection = {
   img: string;
-  style: string;
+  style?: string;
 };
 export type CollectionList = {
   img: string;
@@ -34,6 +34,18 @@ export const collectionsList: CollectionList[] = [
   {
     img: '/pictures/collections/line1w/main.webp',
     name: 'fifthCollection',
+  },
+  {
+    img: '/pictures/collections/sixcollection/main.webp',
+    name: 'sixCollcetion',
+  },
+  {
+    img: '/pictures/collections/seventhcollection/main.webp',
+    name: 'seventhCollection',
+  },
+  {
+    img: '/pictures/collections/eightcollection/main.webp',
+    name: 'eightCollection',
   },
 ];
 
@@ -91,6 +103,7 @@ export const fourCollection: CollectionsGroup = {
     { img: '/pictures/collections/line3w/line3w-5.webp', style: styles.div9 },
   ],
 };
+
 export const fiveCollection: CollectionsGroup = {
   top: [
     { img: '/pictures/collections/line1w/line1w-1.webp', style: styles.div1 },
@@ -102,5 +115,54 @@ export const fiveCollection: CollectionsGroup = {
     { img: '/pictures/collections/line1w/main.webp', style: styles.div7 },
     { img: '/pictures/collections/line1w/line1w-6.webp', style: styles.div8 },
     { img: '/pictures/collections/line1w/line1w-5.webp', style: styles.div9 },
+  ],
+};
+
+export const sixCollection: Collection[] = [
+  { img: '/pictures/collections/sixcollection/main.webp' },
+  { img: '/pictures/collections/sixcollection/2.webp' },
+  { img: '/pictures/collections/sixcollection/3.webp' },
+  { img: '/pictures/collections/sixcollection/4.webp' },
+  { img: '/pictures/collections/sixcollection/5.webp' },
+  { img: '/pictures/collections/sixcollection/6.webp' },
+  { img: '/pictures/collections/sixcollection/7.webp' },
+  { img: '/pictures/collections/sixcollection/8.webp' },
+  { img: '/pictures/collections/sixcollection/9.webp' },
+  { img: '/pictures/collections/sixcollection/10.webp' },
+  { img: '/pictures/collections/sixcollection/11.webp' },
+  { img: '/pictures/collections/sixcollection/12.webp' },
+  { img: '/pictures/collections/sixcollection/13.webp' },
+];
+
+export const seventhCollection: Collection[] = [
+  { img: '/pictures/collections/seventhcollection/main.webp' },
+  { img: '/pictures/collections/seventhcollection/2.webp' },
+  { img: '/pictures/collections/seventhcollection/3.webp' },
+  { img: '/pictures/collections/seventhcollection/4.webp' },
+  { img: '/pictures/collections/seventhcollection/5.webp' },
+  { img: '/pictures/collections/seventhcollection/6.webp' },
+  { img: '/pictures/collections/seventhcollection/7.webp' },
+  { img: '/pictures/collections/seventhcollection/8.webp' },
+  { img: '/pictures/collections/seventhcollection/9.webp' },
+  { img: '/pictures/collections/seventhcollection/10.webp' },
+  { img: '/pictures/collections/seventhcollection/11.webp' },
+  { img: '/pictures/collections/seventhcollection/12.webp' },
+  { img: '/pictures/collections/seventhcollection/13.webp' },
+];
+
+export const eightCollection: CollectionsGroup = {
+  top: [
+    { img: '/pictures/collections/eightcollection/1.webp', style: styles.div1 },
+    { img: '/pictures/collections/eightcollection/2.webp', style: styles.div2 },
+    { img: '/pictures/collections/eightcollection/3.webp', style: styles.div4 },
+    { img: '/pictures/collections/eightcollection/4.webp', style: styles.div6 },
+  ],
+  bottom: [
+    { img: '/pictures/collections/eightcollection/5.webp', style: styles.div7 },
+    {
+      img: '/pictures/collections/eightcollection/main.webp',
+      style: styles.div8,
+    },
+    { img: '/pictures/collections/eightcollection/6.webp', style: styles.div9 },
   ],
 };

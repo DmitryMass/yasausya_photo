@@ -1,14 +1,18 @@
 import {
+  eightCollection,
   fiveCollection,
   fourCollection,
   morningCollection,
   secondCollection,
+  seventhCollection,
+  sixCollection,
   thirdCollection,
 } from '@/src/utils/collections-group';
 import { useRouter } from 'next/router';
 import { FC } from 'react';
 import { PageTitle } from '../ui/PageTitle';
 import { CollectionMap } from './CollectionMap';
+import { HighPhotoCollection } from './HighPhotoCollection';
 
 export const CollectionsContainer: FC = () => {
   const {
@@ -31,6 +35,15 @@ export const CollectionsContainer: FC = () => {
       ) : null}
       {name === 'fifthCollection' ? (
         <CollectionMap collection={fiveCollection} />
+      ) : null}
+      {name === 'sixCollcetion' ? (
+        <HighPhotoCollection collection={sixCollection} />
+      ) : null}
+      {name === 'seventhCollection' ? (
+        <HighPhotoCollection collection={seventhCollection} />
+      ) : null}
+      {name === 'eightCollection' ? (
+        <CollectionMap collection={eightCollection} />
       ) : null}
     </div>
   );
