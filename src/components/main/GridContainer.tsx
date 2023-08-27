@@ -1,39 +1,13 @@
 import { FC } from 'react';
 import GridElement from './GridElement';
 import styles from './grid-container.module.css';
-
-const data = [
-  {
-    img: '/pictures/img_1033.JPG',
-    name: 'Morning Collection',
-  },
-  {
-    img: '/pictures/img_1033.JPG',
-    name: 'Summer Collection',
-  },
-  {
-    img: '/pictures/img_1033.JPG',
-    name: 'Winter Collection',
-  },
-  {
-    img: '/pictures/img_1033.JPG',
-    name: 'Autumn Collection',
-  },
-  {
-    img: '/pictures/img_1033.JPG',
-    name: 'Spring Collection',
-  },
-  {
-    img: '/pictures/header-bg.jpg',
-    name: 'Pornhub Collection',
-  },
-];
+import { collectionsList } from '@/src/utils/collections-group';
 
 export const GridContainer: FC = () => {
   return (
     <div className={styles.container}>
-      {data.map((img: any, idx) => {
-        return <GridElement key={idx} img={img} />;
+      {collectionsList.map((img) => {
+        return <GridElement key={img.name} img={img} />;
       })}
     </div>
   );

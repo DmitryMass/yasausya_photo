@@ -3,7 +3,7 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import { FC, useEffect, useRef } from 'react';
 import styles from './posters.module.css';
-import { useRouter } from 'next/router';
+import { useTranslation } from 'react-i18next';
 
 type PosterItemProps = {
   img: string;
@@ -13,6 +13,7 @@ type PosterItemProps = {
 
 export const PosterItem: FC<PosterItemProps> = ({ img, text, onClick }) => {
   const elementRef = useRef(null);
+  const { t } = useTranslation();
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -45,7 +46,9 @@ export const PosterItem: FC<PosterItemProps> = ({ img, text, onClick }) => {
           <img className="w-full h-full object-cover" src={img} alt="img" />
         </div>
       </div>
-      <div className="text-sand text-lg font-medium tracking-wider">{text}</div>
+      <div className="text-sand text-lg font-medium tracking-wider">
+        {t(text)}
+      </div>
     </div>
   );
 };

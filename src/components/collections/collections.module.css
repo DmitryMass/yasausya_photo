@@ -1,29 +1,34 @@
 .container {
   display: grid;
-  padding: 0 25px;
-  max-width: 992px;
-  margin: 0 auto;
   margin-bottom: 25px;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: minmax(100px, auto);
   grid-template-areas:
     'div1 div2 div6'
     'div1 div4 div6';
-
   gap: 25px;
 }
 
 .container2 {
   display: grid;
-  padding: 0 25px;
-  max-width: 992px;
-  margin: 0 auto;
   grid-template-columns: repeat(2, 1fr);
   grid-auto-rows: minmax(200px, auto);
   grid-template-areas:
     'div7 div8'
     'div9 div8';
   gap: 25px;
+}
+
+@media (max-width: 768px) {
+  .container,
+  .container2 {
+    display: block;
+    marginn-bottom: 0;
+  }
+  .container > div,
+  .container2 > div {
+    margin-bottom: 25px;
+  }
 }
 
 .div1 {
@@ -34,16 +39,8 @@
   grid-area: div2;
 }
 
-.div3 {
-  grid-area: div3;
-}
-
 .div4 {
   grid-area: div4;
-}
-
-.div5 {
-  grid-area: div5;
 }
 
 .div6 {

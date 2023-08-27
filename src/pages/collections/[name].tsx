@@ -1,5 +1,5 @@
 import { CollectionsContainer } from '@/src/components/collections/CollectionsContainer';
-import React, { FC } from 'react';
+import { FC } from 'react';
 
 const CollectionItem: FC = () => {
   return <CollectionsContainer />;

@@ -4,6 +4,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick-theme.css';
 import 'slick-carousel/slick/slick.css';
 import { ContactMe } from '../ui/ContactMe';
+import { useTranslation } from 'react-i18next';
 
 export type PosterModalProps = {
   onRequestClose: () => void;
@@ -14,6 +15,7 @@ export const PosterModal: FC<PosterModalProps> = ({
   onRequestClose,
   selectedPosterIndex,
 }) => {
+  const { t } = useTranslation();
   const settings = {
     infinite: true,
     dots: true,
@@ -32,7 +34,7 @@ export const PosterModal: FC<PosterModalProps> = ({
           <img className="w-7 h-7" src="/icons/close.svg" alt="close" />
         </button>
         <Slider {...settings}>
-          {postersGroup.map(({ img, text }: any, idx: number) => (
+          {postersGroup.map(({ img, text, name }, idx: number) => (
             <div key={idx} className="relative">
               <div className="block gap-4 md:flex px-5 my-16">
                 <div className="w-full p-4 border border-sand h-[400px] mb-4 md:ml-5">
@@ -44,16 +46,12 @@ export const PosterModal: FC<PosterModalProps> = ({
                 </div>
                 <div className="max-w-[500px] sm:mx-auto w-full flex flex-col justify-center items-start">
                   <h3 className="text-sand font-medium text-xl mb-3 w-full text-center md:text-left">
-                    Morning picture photo jpg
+                    {t(text)}
                   </h3>
                   <p className="text-sand text-sm mb-10 md:w-11/12 w-full text-center md:text-left">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Suscipit provident eveniet non aspernatur, consectetur
-                    cupiditate laborum asperiores, nulla culpa odio, praesentium
-                    doloribus velit. Facere voluptatem aperiam illum, quam earum
-                    perferendis?
+                    {t(name)}
                   </p>
-                  <div className="w-full md:text-left text-center">
+                  <div className="w-full flex md:justify-start justify-center">
                     <ContactMe />
                   </div>
                 </div>

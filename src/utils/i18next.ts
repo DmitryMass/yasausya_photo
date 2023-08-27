@@ -42,6 +42,53 @@ i18n.use(initReactI18next).init({
           '... time is like sand slipping through the fingers of fate ...',
         kolyuchki3: '... dreams are a map to the treasures of the soul ...',
         kolyuchki4: '... stars are dreams that lit up in the sky ...',
+
+        'line-1-left': 'Resonance',
+        'line-1-left-desc': '...in the heart of the city...',
+
+        'line-1-center': `Rhythm's Heartbeat`,
+        'line-1-center-desc': '...on the wings of desires...',
+
+        'line-1-right': `Rose's Essence`,
+        'line-1-right-desc': '...on the brink of dawn...',
+
+        'line-2-left': 'Mysterious Vibe',
+        'line-2-left-desc': '...where the shadows play...',
+
+        'line-2-center': 'Accent',
+        'line-2-center-desc': '...under the gaze of the moon...',
+
+        'line-2-right': 'Electric Spirit',
+        'line-2-right-desc': '...where words dance...',
+
+        'line-3-left': 'Cohabitation',
+        'line-3-left-desc': '...amidst the sands of time...',
+
+        'line-3-center': 'Guardians of Horizon',
+        'line-3-center-desc': `...in the moon's embrace...`,
+
+        'line-3-right': 'Clear Gaze',
+        'line-3-right-desc': '...under the open sky...',
+
+        'line-4-left': 'Alohomora',
+        'line-4-left-desc': '...in the reflection of your eyes...',
+
+        'line-4-center': 'Time Spiral',
+        'line-4-center-desc': '...under the glimmers of memories...',
+
+        'line-4-right': 'Eternalism',
+        'line-4-right-desc': '...among the night dreams...',
+
+        'line-5-left': `Sound's Shadow`,
+        'line-5-left-desc': '...amidst the music of silence...',
+
+        'line-5-center': 'Flight',
+        'line-5-center-desc': '...in the dance of the winds...',
+
+        'line-5-right': `Sky's Whisper`,
+        'line-5-right-desc': '...when thoughts flirt with reality...',
+
+        'Morning Collection': 'Morning Collection',
       },
     },
     es: {
@@ -87,6 +134,54 @@ i18n.use(initReactI18next).init({
         kolyuchki3: '... sueños son el mapa hacia los tesoros del alma ...',
         kolyuchki4:
           '... las estrellas son sueños que se encendieron en el cielo ...',
+
+        'line-1-left': 'Resonancia',
+        'line-1-left-desc': '...en el corazón de la ciudad...',
+
+        'line-1-center': 'Latido del Ritmo',
+        'line-1-center-desc': '...en las alas de los deseos...',
+
+        'line-1-right': `Esencia de Rosa`,
+        'line-1-right-desc': '...al borde del amanecer...',
+
+        'line-2-left': 'Vibra Misteriosa',
+        'line-2-left-desc': ' ...donde las sombras juegan...',
+
+        'line-2-center': 'El Acento',
+        'line-2-center-desc': '...bajo la mirada de la luna...',
+
+        'line-2-right': 'El Fantasma Eléctrico',
+        'line-2-right-desc': '...donde las palabras bailan...',
+
+        'line-3-left': 'Convivencia',
+        'line-3-left-desc': '...en medio de los granos del tiempo...',
+
+        'line-3-center': 'Guardianes del Horizonte',
+        'line-3-center-desc': '...en el abrazo de la luna...',
+
+        'line-3-right': 'Mirada Clara',
+        'line-3-right-desc': '...bajo el cielo abierto...',
+
+        'line-4-left': 'Alohomora',
+        'line-4-left-desc': '...en el reflejo de tus ojos...',
+
+        'line-4-center': 'Espiral Temporal',
+        'line-4-center-desc': '...bajo los destellos de los recuerdos...',
+
+        'line-4-right': 'Eternalismo',
+        'line-4-right-desc': '...entre los sueños nocturnos...',
+
+        'line-5-left': 'Sombra del Sonido',
+        'line-5-left-desc': '...en medio de la música del silencio...',
+
+        'line-5-center': 'Vuelo',
+        'line-5-center-desc': '...en el baile de los vientos...',
+
+        'line-5-right': `Susurro del Cielo`,
+        'line-5-right-desc':
+          '...cuando los pensamientos coquetean con la realidad...',
+
+        'Morning Collection': 'Utrenia del Colection',
       },
     },
     ua: {
@@ -94,7 +189,7 @@ i18n.use(initReactI18next).init({
         ua: 'UA',
         en: 'EN',
         es: 'ES',
-        photographerFrom: 'Фотограф із Валенсії',
+        photographerFrom: 'Фотограф у Валенсії',
         fullName: 'Olha Sausya',
         home: 'Головна',
         posters: 'Постери',
@@ -125,6 +220,53 @@ i18n.use(initReactI18next).init({
         kolyuchki2: '... час - це пісок, що струмує через пальці долі ...',
         kolyuchki3: '... мрії - це карта до скарбів душі ...',
         kolyuchki4: '... зорі - це мрії, які загорілися на небесах ...',
+
+        'line-1-left': 'Резонанс',
+        'line-1-left-desc': '...серед еха міста...',
+
+        'line-1-center': 'Пульс',
+        'line-1-center-desc': '...на крилах бажань...',
+
+        'line-1-right': 'Розова Есенція',
+        'line-1-right-desc': '...на межі світанку...',
+
+        'line-2-left': 'Таємничий Настрій',
+        'line-2-left-desc': '...де тіні граються...',
+
+        'line-2-center': 'Акцент',
+        'line-2-center-desc': '...під поглядом місяця...',
+
+        'line-2-right': 'Електричний Дух',
+        'line-2-right-desc': '...там, де слова танцюють...',
+
+        'line-3-left': 'Співіснування',
+        'line-3-left-desc': '...серед пісочних годин...',
+
+        'line-3-center': 'Стражі Горизонту',
+        'line-3-center-desc': '...в обіймах місяця...',
+
+        'line-3-right': 'Прозорий погляд',
+        'line-3-right-desc': '...під відкритим небом...',
+
+        'line-4-left': 'Алохомора',
+        'line-4-left-desc': '...у відображенні твоїх очей...',
+
+        'line-4-center': 'Спираль Часу',
+        'line-4-center-desc': '...під відблисками спогадів...',
+
+        'line-4-right': 'Етерналізм',
+        'line-4-right-desc': '...серед нічних мрій...',
+
+        'line-5-left': 'Тінь Звуку',
+        'line-5-left-desc': '...серед музики тиші...',
+
+        'line-5-center': 'Політ',
+        'line-5-center-desc': '...в танці вітрів...',
+
+        'line-5-right': 'Шепіт Неба',
+        'line-5-right-desc': '...коли думки фліртують з реальністю...',
+
+        'Morning Collection': 'Утрення колекціяцва',
       },
     },
   },

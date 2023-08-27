@@ -64,7 +64,7 @@ body {
     height: 50px !important;
     width: 50px !important;
     z-index: 50 !important;
-    bottom: 0 !important;
+    bottom: -20px !important;
     top: inherit !important;
   }
   .slick-prev::before,

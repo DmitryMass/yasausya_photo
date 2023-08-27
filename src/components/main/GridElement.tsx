@@ -5,22 +5,22 @@ import { usePlaySound } from '@/src/hooks/usePlaySound';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import { useRouter } from 'next/router';
+import type { CollectionList } from '@/src/utils/collections-group';
+import { useTranslation } from 'react-i18next';
 
 type GridElementProps = {
-  img: {
-    img: string;
-    name: string;
-  };
+  img: CollectionList;
 };
 
-const GridElement: FC<GridElementProps> = ({ img }) => {
+const GridElement: FC<GridElementProps> = ({ img: { img, name } }) => {
+  const { t } = useTranslation();
   const { playSound } = usePlaySound();
   const elementRef = useRef(null);
   const { push } = useRouter();
 
   const handleClick = () => {
     playSound();
-    push(`/collections/${img.name}`);
+    push(`/collections/${name}`);
   };
 
   useEffect(() => {
@@ -49,9 +49,9 @@ const GridElement: FC<GridElementProps> = ({ img }) => {
         'relative overflow-hidden cursor-pointer after:absolute after:w-full after:h-full after:bg-mainBg after:inset-0 after:bg-opacity-50 hover:after:opacity-0 hover:after:transition-all hover:after:duration-500 after:transition-all after:duration-500',
       )}
     >
-      <img src={img.img} alt="logo" />
+      <img src={img} alt={name} />
       <p className="text-sand absolute top-0 w-full z-10 text-center text-2xl  uppercase transition-all duration-500 h-full flex justify-center items-center tracking-wide">
-        {img.name}
+        {t(name)}
       </p>
     </div>
   );
