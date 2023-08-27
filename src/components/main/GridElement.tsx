@@ -50,7 +50,7 @@ const GridElement: FC<GridElementProps> = ({ img: { img, name } }) => {
       )}
     >
       <img src={img} alt={name} />
-      <p className="text-sand absolute top-0 w-full z-10 text-center text-2xl  uppercase transition-all duration-500 h-full flex justify-center items-center tracking-wide">
+      <p className="text-sand absolute top-0 w-full px-5 z-10 text-center text-xl lg:text-2xl  uppercase transition-all duration-500 h-full flex justify-center items-center tracking-wide">
         {t(name)}
       </p>
     </div>

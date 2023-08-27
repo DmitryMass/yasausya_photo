@@ -88,7 +88,11 @@ i18n.use(initReactI18next).init({
         'line-5-right': `Sky's Whisper`,
         'line-5-right-desc': '...when thoughts flirt with reality...',
 
-        'Morning Collection': 'Morning Collection',
+        firstCollection: `summer's orange echo`,
+        secondCollection: 'mysterious silence of the soul',
+        thirdCollection: 'sea elegy in pink',
+        fourthCollection: 'twilight reflection',
+        fifthCollection: 'blue seizes life',
       },
     },
     es: {
@@ -181,7 +185,11 @@ i18n.use(initReactI18next).init({
         'line-5-right-desc':
           '...cuando los pensamientos coquetean con la realidad...',
 
-        'Morning Collection': 'Utrenia del Colection',
+        firstCollection: 'eco naranja del verano',
+        secondCollection: 'el misterioso silencio del alma',
+        thirdCollection: 'elegía marina en rosa',
+        fourthCollection: 'reflexión crepuscular',
+        fifthCollection: 'azul es la vida',
       },
     },
     ua: {
@@ -266,7 +274,11 @@ i18n.use(initReactI18next).init({
         'line-5-right': 'Шепіт Неба',
         'line-5-right-desc': '...коли думки фліртують з реальністю...',
 
-        'Morning Collection': 'Утрення колекціяцва',
+        firstCollection: 'помаранчеве ехо літа',
+        secondCollection: 'таємнича тиша душі',
+        thirdCollection: 'морська елегія в рожевому',
+        fourthCollection: 'сутінкова рефлексія',
+        fifthCollection: 'блакитний захват життя',
       },
     },
   },
