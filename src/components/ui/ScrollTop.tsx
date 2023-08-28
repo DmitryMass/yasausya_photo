@@ -30,7 +30,7 @@ export const ScrollTop: FC = () => {
 
   return (
     <div
-      className={`fixed bottom-7 right-7 w-8 h-8 z-20 p-1 animate-pulse ${
+      className={`fixed bottom-7 right-7 w-8 h-8 z-20 p-1 animate-pulse cursor-pointer ${
         isVisible ? 'block' : 'hidden'
       }`}
       onClick={scrollToTop}

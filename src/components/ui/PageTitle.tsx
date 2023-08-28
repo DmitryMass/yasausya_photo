@@ -18,7 +18,7 @@ export const PageTitle: FC<PageTitleProps> = ({ title, text }) => {
             {t(text as string)}
           </p>
         ) : null}
-        <h1 className="text-sand font-medium text-4xl tracking-wide pointer-events-none">
+        <h1 className="text-sand font-medium text-4xl tracking-wide pointer-events-none capitalize">
           {t(title as string)}
         </h1>
       </div>

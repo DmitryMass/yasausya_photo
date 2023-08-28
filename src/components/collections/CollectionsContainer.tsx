@@ -21,7 +21,7 @@ export const CollectionsContainer: FC = () => {
     query: { name },
   } = useRouter();
   return (
-    <div className="pb-10 capitalize">
+    <div className="pb-10">
       <PageTitle title={name as string} />
       {name === 'firstCollection' ? (
         <CollectionMap collection={morningCollection} />
