@@ -96,6 +96,8 @@ i18n.use(initReactI18next).init({
         sixCollcetion: 'moon serenade in a goblet',
         seventhCollection: 'shady waters of the sunset',
         eightCollection: 'sensitive navigation',
+        ninethCollection: 'city chords',
+        tenthCollection: 'anima',
       },
     },
     es: {
@@ -196,6 +198,8 @@ i18n.use(initReactI18next).init({
         sixCollcetion: 'serenta lunar en el vaso',
         seventhCollection: 'aguas sombrías del atardecer',
         eightCollection: 'navegación sensible',
+        ninethCollection: 'acordes urbanos',
+        tenthCollection: 'anima',
       },
     },
     ua: {
@@ -288,6 +292,8 @@ i18n.use(initReactI18next).init({
         sixCollcetion: 'лунна серенада у келиху',
         seventhCollection: 'тіньові води закату',
         eightCollection: 'чуттєва навігація',
+        ninethCollection: 'міські акорди',
+        tenthCollection: 'аніма',
       },
     },
   },

@@ -47,6 +47,14 @@ export const collectionsList: CollectionList[] = [
     img: '/pictures/collections/eightcollection/main.webp',
     name: 'eightCollection',
   },
+  {
+    img: '/pictures/collections/ninethcollection/main.webp',
+    name: 'ninethCollection',
+  },
+  {
+    img: '/pictures/collections/tenthcollection/main.webp',
+    name: 'tenthCollection',
+  },
 ];
 
 export const morningCollection: CollectionsGroup = {
@@ -166,3 +174,39 @@ export const eightCollection: CollectionsGroup = {
     { img: '/pictures/collections/eightcollection/6.webp', style: styles.div9 },
   ],
 };
+
+export const ninethCollection: Collection[] = [
+  { img: '/pictures/collections/ninethcollection/1.webp' },
+  { img: '/pictures/collections/ninethcollection/2.webp' },
+  { img: '/pictures/collections/ninethcollection/3.webp' },
+  { img: '/pictures/collections/ninethcollection/4.webp' },
+  { img: '/pictures/collections/ninethcollection/5.webp' },
+  { img: '/pictures/collections/ninethcollection/6.webp' },
+  { img: '/pictures/collections/ninethcollection/7.webp' },
+  { img: '/pictures/collections/ninethcollection/8.webp' },
+  { img: '/pictures/collections/ninethcollection/9.webp' },
+  { img: '/pictures/collections/ninethcollection/10.webp' },
+  { img: '/pictures/collections/ninethcollection/11.webp' },
+  { img: '/pictures/collections/ninethcollection/12.webp' },
+  { img: '/pictures/collections/ninethcollection/13.webp' },
+  { img: '/pictures/collections/ninethcollection/14.webp' },
+  { img: '/pictures/collections/ninethcollection/15.webp' },
+];
+
+export const tenthCollection: Collection[] = [
+  { img: '/pictures/collections/tenthcollection/1.webp' },
+  { img: '/pictures/collections/tenthcollection/2.webp' },
+  { img: '/pictures/collections/tenthcollection/3.webp' },
+  { img: '/pictures/collections/tenthcollection/4.webp' },
+  { img: '/pictures/collections/tenthcollection/5.webp' },
+  { img: '/pictures/collections/tenthcollection/6.webp' },
+  { img: '/pictures/collections/tenthcollection/7.webp' },
+  { img: '/pictures/collections/tenthcollection/8.webp' },
+  { img: '/pictures/collections/tenthcollection/9.webp' },
+  { img: '/pictures/collections/tenthcollection/10.webp' },
+  { img: '/pictures/collections/tenthcollection/11.webp' },
+  { img: '/pictures/collections/tenthcollection/12.webp' },
+  { img: '/pictures/collections/tenthcollection/13.webp' },
+  { img: '/pictures/collections/tenthcollection/14.webp' },
+  { img: '/pictures/collections/tenthcollection/15.webp' },
+];

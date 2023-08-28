@@ -3,9 +3,11 @@ import {
   fiveCollection,
   fourCollection,
   morningCollection,
+  ninethCollection,
   secondCollection,
   seventhCollection,
   sixCollection,
+  tenthCollection,
   thirdCollection,
 } from '@/src/utils/collections-group';
 import { useRouter } from 'next/router';
@@ -44,6 +46,12 @@ export const CollectionsContainer: FC = () => {
       ) : null}
       {name === 'eightCollection' ? (
         <CollectionMap collection={eightCollection} />
+      ) : null}
+      {name === 'ninethCollection' ? (
+        <HighPhotoCollection collection={ninethCollection} />
+      ) : null}
+      {name === 'tenthCollection' ? (
+        <HighPhotoCollection collection={tenthCollection} />
       ) : null}
     </div>
   );
