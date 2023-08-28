@@ -14,7 +14,7 @@ const Home: FC = () => {
 
   return (
     <>
-      <div className='h-screen bg-[url("/pictures/IMG_1033.JPG")] bg-no-repeat bg-cover bg-center w-full'>
+      <div className='h-screen bg-[url("/pictures/main.webp")] bg-no-repeat bg-cover bg-center w-full'>
         <MainInfo />
         <div className="left-0 absolute bottom-5 w-full mx-auto">
           <span

@@ -8,8 +8,8 @@ export const SocialButtons: FC = () => {
     <div className="flex items-center justify-center gap-3">
       <a
         onClick={playSound}
-        className="border-sand mx-1 hover:bg-sand hover:bg-opacity-50 transition-all duration-150 w-10 h-10 rounded-full flex items-center justify-center"
-        href={'mailto:olga.sausya@gmail.com?subject=Buy&body=Текст%20письма'}
+        className="border-sand mx-1 hover:bg-sand hover:bg-opacity-50 transition-all duration-150 w-10 h-10 rounded-full flex items-center justify-center group relative"
+        href={'mailto:olga.sausya@gmail.com'}
         target="_blank"
       >
         <img
@@ -17,6 +17,9 @@ export const SocialButtons: FC = () => {
           src="/icons/mail-logo.svg"
           alt="email"
         />
+        <span className="absolute bottom-[-30px] left-1/2 transform -translate-x-1/2 bg-mainBgOpacity p-1 rounded text-xs whitespace-nowrap opacity-0 group-hover:opacity-100 pointer-events-none text-sand">
+          olga.sausya@gmail.com
+        </span>
       </a>
       <a
         onClick={playSound}
