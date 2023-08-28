@@ -9,14 +9,21 @@ import 'swiper/css/navigation';
 import 'swiper/css/thumbs';
 import 'swiper/css/controller';
 import '@/src/styles/globals.css';
+import Head from 'next/head';
 
 const App: FC<AppProps> = ({ Component, pageProps }) => {
   return (
-    <I18nextProvider i18n={i18n}>
-      <MainLayout>
-        <Component {...pageProps} />
-      </MainLayout>
-    </I18nextProvider>
+    <>
+      <Head>
+        {' '}
+        <title>yasausya photo</title>
+      </Head>
+      <I18nextProvider i18n={i18n}>
+        <MainLayout>
+          <Component {...pageProps} />
+        </MainLayout>
+      </I18nextProvider>
+    </>
   );
 };
 
